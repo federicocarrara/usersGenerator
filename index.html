@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>userGeneratorComparison</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1 class="ui center aligned header">User Cards Generator - API Requests Comparison</h1>
+    <div class="ui clearing divider"></div>
+    <div class="ui grid container">
+      <div class="stackable doubling four column row center aligned">
+<!-- fetch (1)-->
+        <div class="column">
+          <div class="ui card">
+            <div class="image">
+              <img id="avatar1" src="https://pbs.twimg.com/profile_images/901947348699545601/hqRMHITj_400x400.jpg">
+            </div>
+            <div class="content">
+              <span class="header" id="fullname1">Jon Snow</span>
+              <div class="meta">
+                <span class="date" id="username1">kingofnorth</span>
+              </div>
+              <div class="description">
+                <div>
+                  <div>Email: <span id="email1">jon@hotmail.com</span></div>
+                  <div>City: <span id="city1">Winterfell</span></div>
+                </div>
+              </div>
+            </div>
+            <button class="ui button">
+              <div id="btn1">
+                <h2 class="center aligned">View Next Card (Fetch Request)</h2>
+              </div>
+            </button>
+          </div>
+        </div>
+<!-- XMLHTTP (2)-->
+        <div class="column">
+          <div class="ui card">
+            <div class="image">
+              <img id="avatar2" src="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2015/07/10/ronaldo-fenomeno-foto-yasuyoshi-chibaafplanima2015041900281.jpg">
+            </div>
+            <div class="content">
+              <span class="header" id="fullname2">Ronaldo</span>
+              <div class="meta">
+                <span class="date" id="username2">fenomeno</span>
+              </div>
+              <div class="description">
+                <div>
+                  <div>Email: <span id="email2">ronny@gmail.com</span></div>
+                  <div>City: <span id="city2">Rio</span></div>
+                </div>
+              </div>
+            </div>
+            <button class="ui button">
+              <div id="btn2" class="center aligned">
+                <h2 >View Next Card (XMLHTTP Request)</h2>
+              </div>
+            </button>
+          </div>
+        </div>
+<!-- JQuery (3)-->
+        <div class="column">
+          <div class="ui card">
+            <div class="image">
+              <img id="avatar3" src="https://vignette.wikia.nocookie.net/disney/images/5/5c/Mary_Poppins_-_Julie_Andrews.jpg/revision/latest/scale-to-width-down/515?cb=20160212083150">
+            </div>
+            <div class="content">
+              <span class="header" id="fullname3">Mary Poppins</span>
+              <div class="meta">
+                <span class="date" id="username3">Marypp</span>
+              </div>
+              <div class="description">
+                <div>
+                  <div>Email: <span id="email3">mar_ppns@gmail.com</span></div>
+                  <div>City: <span id="city3">London</span></div>
+                </div>
+              </div>
+            </div>
+            <button class="ui button">
+              <div id="btn3">
+                <h2 class="center aligned">View Next Card (JQuery Request)</h2>
+              </div>
+            </button>
+          </div>
+        </div>
+<!-- Axios (4)-->
+        <div class="column">
+          <div class="ui card">
+            <div class="image">
+              <img id="avatar4" src="https://www.biography.com/.image/t_share/MTE4MDAzNDEwNzg5ODI4MTEw/barack-obama-12782369-1-402.jpg">
+            </div>
+            <div class="content">
+              <span class="header" id="fullname4">Barack Obama</span>
+              <div class="meta">
+                <span class="date" id="username4">the_pres</span>
+              </div>
+              <div class="description">
+                <div>
+                  <div>Email: <span id="email4">bbobama@hotmail.com</span></div>
+                  <div>City: <span id="city4">Hawaii</span></div>
+                </div>
+              </div>
+            </div>
+            <button class="ui button">
+              <div id="btn4">
+                <h2 class="center aligned">View Next Card (Axios Request)</h2>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

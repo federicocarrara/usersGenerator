@@ -8,3 +8,4 @@ API requests with 4 methods compared
   - Axios
   - HTML
   - CSS
+  - Semantic UI
